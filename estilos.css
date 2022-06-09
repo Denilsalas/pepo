@@ -1,0 +1,102 @@
+.contenedor{
+    text-align: center;
+    height: 100vh;
+    grid-gap: 0.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "menuIzquierdo menuIzquierdo menuDerecho menuDerecho"
+        "menuIzquierdo1 menuIzquierdo2 menuDerecho1 menuDerecho2"
+        "menuIzquierdo3 menuIzquierdo4 menuDerecho3 menuDerecho4"
+        "final final final final"
+        "footer footer footer footer";
+}
+.header{
+    grid-area: header;
+    background-color: orangered;
+}
+.menuIzquierdo{
+    grid-area: menuIzquierdo;
+    background-color: rgb(51, 255, 0);
+}
+.menuDerecho{
+    grid-area: menuDerecho;
+    background-color: yellow;
+}
+.menuIzquierdo1{
+    grid-area: menuIzquierdo1;
+    background-color: rgb(51, 255, 0);
+}
+.menuIzquierdo2{
+    grid-area: menuIzquierdo2;
+    background-color: rgb(51, 255, 0);
+}
+.menuDerecho1{
+    grid-area: menuDerecho1;
+    background-color: yellow;
+}
+.menuDerecho2{
+    grid-area: menuDerecho2;
+    background-color: yellow;
+}
+.menuIzquierdo3{
+    grid-area: menuIzquierdo3;
+    background-color: rgb(51, 255, 0);
+}
+.menuIzquierdo4{
+    grid-area: menuIzquierdo4;
+    background-color: rgb(51, 255, 0);
+}
+.menuDerecho3{
+    grid-area: menuDerecho3;
+    background-color: yellow;
+}
+.menuDerecho4{
+    grid-area: menuDerecho4;
+    background-color: yellow;
+}
+.final{
+    grid-area: final;
+    background-color: aqua;
+}
+.footer{
+    grid-area: footer;
+    background-color: greenyellow;
+}
+@media screen and (max-width: 1000px) {
+    .contenedor{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "menuIzquierdo menuDerecho"
+            "menuIzquierdo1 menuDerecho1"
+            "menuIzquierdo2 menuDerecho2"
+            "menuIzquierdo3 menuDerecho3"
+            "menuIzquierdo4 menuDerecho4"
+            "final final"
+            "footer footer";
+    }
+}
+@media screen and (max-width:780px) {
+    .contenedor{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header"
+            "menuIzquierdo"
+            "menuDerecho"
+            "menuIzquierdo1" 
+            "menuDerecho1"
+            "menuIzquierdo2"
+            "menuDerecho2"
+            "menuIzquierdo3"
+            "menuDerecho3"
+            "menuIzquierdo4"
+            "menuDerecho4"
+            "final"
+            "footer";
+    }
+}
